@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Zartif Amiri Construction & Engineering Company (ZACEC)</title>
+  <meta name="description" content="Zartif Amiri Construction & Engineering Company - Civil works, WASH, schools, retaining walls, solar water systems" />
+  <!--
+    Single-file static website for ZACEC. Replace placeholders (LOGO, images, text) as needed.
+    Save this file as index.html and upload to GitHub Pages or any static host.
+  -->
+  <style>
+    /* Simple responsive CSS - edit as needed */
+    :root{--brand:#0b66b2;--muted:#6b7280;--dark:#0b1320}
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, Arial, sans-serif;margin:0;color:#111;background:#fff;line-height:1.5}
+    header{background:#ffffff;border-bottom:1px solid #e6e9ee;position:sticky;top:0;z-index:50}
+    .container{max-width:1100px;margin:0 auto;padding:0 18px}
+    nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+    .brand{display:flex;align-items:center;gap:12px}
+    .brand .logo{width:48px;height:48px;background:#eee;border-radius:8px;display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--brand)}
+    .nav-links{display:flex;gap:18px}
+    .nav-links a{color:var(--muted);text-decoration:none;font-weight:600}
+    .hero{display:grid;grid-template-columns:1fr;gap:18px;padding:36px 0}
+    .hero-inner{display:flex;flex-direction:column;gap:18px}
+    .hero h1{font-size:28px;margin:0;color:var(--dark)}
+    .hero p{margin:0;color:var(--muted)}
+    .cta{display:inline-block;padding:10px 16px;background:var(--brand);color:#fff;border-radius:8px;text-decoration:none;font-weight:700}
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:18px}
+    .card{padding:14px;border:1px solid #eef2f6;border-radius:10px;background:#fff}
+    section{padding:26px 0}
+    h2{margin:0 0 12px 0;color:var(--dark)}
+    .services ul{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+    .services li{padding:12px;border:1px solid #f1f4f8;border-radius:8px;background:#fff}
+    .projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+    .project{border-radius:8px;overflow:hidden;border:1px solid #eef2f6;background:#fafafa}
+    .project img{width:100%;height:160px;object-fit:cover;display:block}
+    .project .pdesc{padding:10px}
+    .contact-grid{display:grid;grid-template-columns:1fr;gap:12px}
+    form input, form textarea{width:100%;padding:10px;border:1px solid #dfe6ee;border-radius:6px}
+    form button{padding:10px 14px;border-radius:8px;border:0;background:var(--brand);color:#fff;font-weight:700}
+    footer{border-top:1px solid #eef2f6;padding:18px 0;color:var(--muted)}
+    .small{font-size:13px}
+
+    /* Responsive */
+    @media(min-width:820px){
+      .hero{grid-template-columns:1fr 420px}
+      .hero h1{font-size:34px}
+      .contact-grid{grid-template-columns:1fr 360px}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="brand">
+          <div class="logo" aria-hidden="true">Z</div>
+          <div>
+            <div style="font-weight:800">ZACEC</div>
+            <div style="font-size:12px;color:var(--muted)">Zartif Amiri Construction & Engineering Co.</div>
+          </div>
+        </div>
+        <div class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="home" class="hero">
+      <div class="hero-inner">
+        <h1>Professional Civil & Construction Services across Afghanistan</h1>
+        <p>Zartif Amiri Construction & Engineering Company (ZACEC) delivers high-quality civil works, WASH facilities, school construction, retaining walls, solar water systems, and site development with safety and compliance to donor standards.</p>
+        <div>
+          <a class="cta" href="#contact">Get a Free Quote</a>
+        </div>
+
+        <div class="cards" style="margin-top:8px">
+          <div class="card">
+            <strong>Projects Completed</strong>
+            <div class="small" style="margin-top:6px">Health centers, schools, retaining walls, WASH & solar systems</div>
+          </div>
+          <div class="card">
+            <strong>Capacity</strong>
+            <div class="small" style="margin-top:6px">Project management, site supervision, procurement & QC</div>
+          </div>
+          <div class="card">
+            <strong>Coverage</strong>
+            <div class="small" style="margin-top:6px">Nangarhar, Nimroz, Nuristan and other provinces</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero image / placeholder -->
+      <div style="display:flex;align-items:center;justify-content:center">
+        <!-- Replace the image below with your hero photo: images/hero.jpg -->
+        <img src="images/hero-placeholder.jpg" alt="Construction site" style="width:100%;max-width:420px;border-radius:10px;object-fit:cover;box-shadow:0 6px 18px rgba(11,19,32,0.06)"/>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About ZACEC</h2>
+      <p>ZACEC is a locally registered construction and engineering firm with experience in donor-funded and government projects. Our team includes civil engineers, site supervisors, and skilled labor capable of delivering turnkey solutions while following safety, quality, and environmental guidelines.</p>
+    </section>
+
+    <section id="services">
+      <h2>Services</h2>
+      <div class="services">
+        <ul>
+          <li><strong>Civil Construction & Rehabilitation</strong> — Buildings, health centers, classrooms, and site development.</li>
+          <li><strong>WASH Systems</strong> — Water supply, storage tanks, sanitation blocks, plumbing and drainage.</li>
+          <li><strong>Retaining & Boundary Walls</strong> — Design and construction in hilly and unstable terrains.</li>
+          <li><strong>Solar Water Systems</strong> — Solar pumps, elevated tanks, and solar integration for remote sites.</li>
+          <li><strong>Project Management</strong> — Planning, BOQ, procurement, supervision and quality control.</li>
+          <li><strong>Access & Site Works</strong> — Access paths, ramps, landscaping and security fencing.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Selected Projects</h2>
+      <div class="projects-grid">
+        <!-- Replace images/project1.jpg etc. with real photos -->
+        <div class="project">
+          <img src="images/project1.jpg" alt="MHU Health Center - Nimroz"/>
+          <div class="pdesc"><strong>MHU Basic Health Center, Nimroz</strong><div class="small">Rehabilitation and utilities installation</div></div>
+        </div>
+        <div class="project">
+          <img src="images/project2.jpg" alt="School WASH works"/>
+          <div class="pdesc"><strong>WASH & Boundary Works — Lot #17 & #23</strong><div class="small">WASH, retaining and boundary walls for 98 schools</div></div>
+        </div>
+        <div class="project">
+          <img src="images/project3.jpg" alt="Loya Dakta school"/>
+          <div class="pdesc"><strong>Loya Dakta — Khatky Village, Nangarhar</strong><div class="small">Boundary wall, elevated tank and solar-powered WASH</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <div class="contact-grid">
+        <div>
+          <p><strong>Zartif Amiri Construction & Engineering Company (ZACEC)</strong></p>
+          <p class="small">Email: <a href="mailto:info@zacec.af">info@zacec.af</a> | Phone: +93 700 000 000</p>
+          <p class="small">Address: Kabul / Afghanistan (Replace with full postal address)</p>
+
+          <h3 class="small">Office Location</h3>
+          <!-- Replace src with your Google Map embed code or coordinates -->
+          <div style="width:100%;height:220px;background:#f3f7fb;border-radius:8px;display:flex;align-items:center;justify-content:center;color:var(--muted)">Map placeholder - add Google Maps iframe</div>
+        </div>
+
+        <div>
+          <form id="contactForm" onsubmit="return handleForm(event)">
+            <label class="small">Name</label>
+            <input type="text" id="name" required placeholder="Your full name" />
+            <label class="small">Email</label>
+            <input type="email" id="email" required placeholder="you@example.com" />
+            <label class="small">Phone</label>
+            <input type="text" id="phone" placeholder="+93 7xx xxx xxx" />
+            <label class="small">Message</label>
+            <textarea id="message" rows="5" placeholder="Describe your project or request"></textarea>
+            <div style="margin-top:8px"><button type="submit">Send Message</button></div>
+            <div id="formMsg" style="margin-top:8px;font-size:13px;color:var(--muted)"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+      <div>
+        <strong>ZACEC</strong>
+        <div class="small">Registered construction & engineering company in Afghanistan</div>
+      </div>
+      <div class="small">© <span id="year"></span> Zartif Amiri Construction & Engineering Company. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script>
+    // Small JS: contact form opens user's email client as fallback because there is no server.
+    document.getElementById('year').textContent = new Date().getFullYear();
+    function handleForm(e){
+      e.preventDefault();
+      var name = document.getElementById('name').value.trim();
+      var email = document.getElementById('email').value.trim();
+      var phone = document.getElementById('phone').value.trim();
+      var message = document.getElementById('message').value.trim();
+      var subj = encodeURIComponent('Website contact from ' + name);
+      var body = encodeURIComponent('Name: '+name+'\nEmail: '+email+'\nPhone: '+phone+'\n\nMessage:\n'+message);
+      // Try to open mail client
+      window.location.href = 'mailto:info@zacec.af?subject='+subj+'&body='+body;
+      document.getElementById('formMsg').textContent = 'Your email client should open. If it does not, please contact info@zacec.af directly.';
+      return false;
+    }
+
+    // Helpful notes for editor -- NOT required at runtime.
+    /*
+      To customize:
+      1) Replace logo: change the .logo div to <img src="images/logo.png" alt="ZACEC logo" style="height:48px">.
+      2) Replace hero image: images/hero-placeholder.jpg -> your photo.
+      3) Replace project images in the projects grid.
+      4) Edit contact details in the Contact section and footer.
+      5) To collect form data, replace the mailto flow with a proper backend or use Formspree / Netlify Forms for serverless form handling.
+      6) Save this file as index.html and upload to any static host (GitHub Pages, Netlify, Vercel).
+    */
+  </script>
+</body>
+</html>
